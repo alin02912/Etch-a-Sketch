@@ -1,32 +1,56 @@
+:root {
+    --white: #ffffff;
+    --size: 6.25%;
+}
+
+body {
+    background-color: var(--white);
+}
+
 main {
-    width: 100vw;
-    height: 100vh;
+    width: 800px;
+    height: 800px;
     background-color: lightblue;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    margin: auto;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
 
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    margin-left: 20px;
+}
+
 .pad {
-    width: 70vw;
-    height: 70vh;
+    width: 600px;
+    height: 600px;
     background-color: honeydew;
     display: flex;
     flex-flow: row wrap;
-
-    
 }
 
 .cell {
-    width: 4.375vw;
-    height: 4.375vh;
+    /*     width: 4.375vw;
+    height: 4.375vh; */
+    width: var(--size);
+    height: var(--size);
     padding: 0;
     margin: 0;
     background-color: hotpink;
 }
 
-.cell:hover {
+/* .cell:hover {
     background-color: ivory;
+} */
+
+.mouseEntered {
+    background-color: black;
 }
