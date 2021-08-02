@@ -1,0 +1,32 @@
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.pad {
+    width: 70vw;
+    height: 70vh;
+    background-color: honeydew;
+    display: flex;
+    flex-flow: row wrap;
+
+    
+}
+
+.cell {
+    width: 4.375vw;
+    height: 4.375vh;
+    padding: 0;
+    margin: 0;
+    background-color: hotpink;
+}
+
+.cell:hover {
+    background-color: ivory;
+}
