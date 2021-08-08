@@ -1,9 +1,15 @@
 const r = document.querySelector(':root');
 const pad = document.querySelector('.pad');
 const clear = document.querySelector('#clear');
+const colourPicker = document.querySelector('#colourPicker');
 clear.addEventListener('click', clearPad);
-/* const colour = document.querySelector('#colour');
-colour.addEventListener('click', changeCellSize); */
+
+colourPicker.onchange = e => setCurrentColour(e.target.value);
+
+function setCurrentColour (value) {
+    console.log(value);
+    r.style.setProperty('--colour', value);
+}
 
 
 createPad(16)

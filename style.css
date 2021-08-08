@@ -1,6 +1,8 @@
 :root {
     --white: #ffffff;
     --size: 6.25%;
+    --black: #000000;
+    --colour: #000;
 }
 
 body {
@@ -17,6 +19,13 @@ main {
     justify-content: center;
     align-content: center;
     align-items: center;
+    border: 10px solid black;
+    border-radius: 15%;
+}
+
+h1 {
+    font-size: xx-large;
+    padding: 20px;
 }
 
 .buttons {
@@ -25,8 +34,9 @@ main {
     justify-content: center;
 }
 
-.buttons button {
+.buttons * {
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .pad {
@@ -35,6 +45,11 @@ main {
     background-color: honeydew;
     display: flex;
     flex-flow: row wrap;
+    
+}
+
+.pad:hover {
+    box-shadow:1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 .cell {
@@ -44,7 +59,7 @@ main {
     height: var(--size);
     padding: 0;
     margin: 0;
-    background-color: hotpink;
+    background-color: lightpink;
 }
 
 /* .cell:hover {
@@ -52,5 +67,5 @@ main {
 } */
 
 .mouseEntered {
-    background-color: black;
+    background-color: var(--colour);
 }
