@@ -23,7 +23,7 @@ function createPad(size) {
         const cell = document.createElement('div');
         cell.classList.add('cell');
         cell.addEventListener('mouseenter', changeColour, false);
-        cell.addEventListener("touchmove", changeColour, false);
+        cell.addEventListener("pointerenter", changeColour, false);
         pad.appendChild(cell);
     }
 }

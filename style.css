@@ -60,6 +60,7 @@ h1 {
     padding: 0;
     margin: 0;
     background-color: lightpink;
+    touch-action: none;
 }
 
 /* .cell:hover {
@@ -68,4 +69,5 @@ h1 {
 
 .mouseEntered {
     background-color: var(--colour);
+    touch-action: none;
 }
