@@ -23,7 +23,7 @@ function createPad(size) {
         const cell = document.createElement('div');
         cell.classList.add('cell');
         /* cell.addEventListener('mouseenter', changeColour); */
-        cell.addEventListener("pointerenter", changeColour);
+        cell.addEventListener("pointermove", changeColour);
         pad.appendChild(cell);
     }
 }
@@ -33,7 +33,8 @@ function clearPad() {
     askForNewSize()
 }
 function changeColour() {
-    this.classList.toggle('mouseEntered');
+    this.classList.add('mouseEntered');
+    console.log("pointerenterd!")
 }
 function changeCellSize(size) {
     let newSize = 100 / size;
