@@ -33,8 +33,7 @@ function clearPad() {
     askForNewSize()
 }
 function changeColour() {
-    this.classList.add('mouseEntered');
-    console.log("pointerenterd!")
+    this.classList.toggle('mouseEntered');
 }
 function changeCellSize(size) {
     let newSize = 100 / size;
